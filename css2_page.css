@@ -1,0 +1,168 @@
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: inline;
+  margin-top: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+.nav h1{
+    display: inline;
+    color: rgb(178, 46, 46);
+    font-family:Arial;
+    padding-left: 20px;
+    margin: 0px;
+}
+
+.nav li {
+  float: right;
+}
+
+.nav li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Arial;
+}
+
+.nav li a:hover:not(.active) {
+  background-color: #b9b5b5a7;
+}
+
+.nav li a.active {
+  border-bottom: 1px solid white;
+  background-color:dimgrey;
+}
+.navbar {
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+  
+  .navbar-brand {
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    color: hsl(0, 0%, 100%);
+    padding: 10px 20px;
+  }
+  
+  .navbar-nav {
+    float: right;
+  }
+  
+  .nav-item {
+    padding: 10px 20px;
+  }
+  
+  .nav-link {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    color: #000000;
+    background-color: #f0f0f0;
+  }
+  .image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 400px;
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #555;
+    color: white;
+  }
+  
+  .o{
+      font-family: cursive;
+      display: inline-block;
+      padding: 30px;
+      width: 300px;
+  }
+  .text{
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    margin: 20% 30%;
+    text-align: center;
+  }
+  .text h1{
+    text-align: center;
+    color: #fff;
+    text-transform: center;
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+  .text a{
+    background: orange;
+    border-radius: 10px;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    display: inline-block;
+    color: #fff;
+  }
+  .text a:hover{
+    background: #fff;
+    color: #333;
+  }
+  .text p{
+    color: #fff;
+    font-size: 30px;
+  }
+  @media (max-width:680px){
+    .navbar{
+      float: none;
+      margin-top: 0;
+      text-align: center;
+    }
+    .nav li a {
+      padding: 5px;
+      font-size: 11px;
+    }
+    .text{
+      width: 100vw;
+      height: 100vh;
+      margin: 30% 0;
+    }
+    .text h1{
+      font-size: 30px;
+    }
+    .text p{
+      font-size: 18px;
+    }
+  }
